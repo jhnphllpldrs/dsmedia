@@ -1,0 +1,128 @@
+.footer-div {
+  display: flex;
+  justify-content: center;
+  gap: 22rem;
+  padding: 2rem;
+  color: white;
+  background-color: #191919;
+}
+.footer-div-leftside {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 1rem;
+}
+.footer-div-rightside {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  padding: 1rem;
+}
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.4rem;
+  font-size: 1rem;
+}
+
+.nav-footer li a {
+  text-decoration: none;
+  padding: 0.5rem;
+}
+.nav-footer li a:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+}
+.footer-div-leftside-bottom {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+}
+.footer-div-leftside-bottom a {
+  height: 2rem;
+  color: whitesmoke;
+}
+.footer-div-leftside-bottom a:hover{
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+  color: #8b23f4;
+}
+.nav-footer li a:not(.active) {
+  color: white;
+}
+.nav-footer li a:not(.active):hover {
+  background-color: #8b23f4;
+  border-radius: 0.5rem;
+  color: white;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.email {
+  color: #8b23f4;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.email:hover{
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); 
+}
+.below-footer {
+  background-color: #191919;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.below-footer-policy {
+  background-color: #191919;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+.below-footer-policy:hover{
+  color: #8b23f4;
+}
+.below-footer-div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #191919;
+}
+@media (max-width: 480px) {
+  .footer-div {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .nav-footer {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 669px) {
+  .footer-div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .nav-footer {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+@media (min-width: 670px) and (max-width: 1279px) {
+  .footer-div {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
