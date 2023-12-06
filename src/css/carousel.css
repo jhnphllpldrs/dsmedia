@@ -1,0 +1,75 @@
+.carousel-div {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  padding: 2rem;
+  height: fit-content;
+}
+.carousel-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10vw;
+}
+.fadeout {
+  opacity: 0;
+  transform: translateX(-20px); /* Move the element up during fadeout */
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.fadein {
+  opacity: 1;
+  transform: translateY(0); /* Reset the translation during fadein */
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.carousel-control button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: fit-content;
+}
+.carousel-control-button {
+  width: 2rem;
+  height: 5vw;
+}
+.carousel-control-button:hover{
+  width: 2.1rem;
+  height: 5.1vw;
+  color: #8b23f4;
+  transition: color 0.5s ease, transform 0.5s ease;
+}
+.carousel-div img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+}
+.carousel-statement{
+  font-size: 2rem;
+}
+.carousel-name{
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.carousel-position{
+  font-style: italic;
+
+}
+
+/* Phone */
+@media (max-width: 480px) {
+ 
+}
+/*Semi-phone*/
+@media (min-width: 479px) and (max-width: 669px) {
+  
+}
+/*Larger Screen*/
+@media (min-width: 670px) and (max-width: 1279px) {
+
+}
